@@ -28,7 +28,7 @@ public class PlayerController {
 
     @PostMapping("/save")
     public Player createPlayer(@RequestBody Player player) {
-        Player persistedPlayer = repository.save(player);
+
         log.info("New Player added to PlayerRepository - {}", player);
         return repository.save(player);
     }

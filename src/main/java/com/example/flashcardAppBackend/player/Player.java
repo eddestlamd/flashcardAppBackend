@@ -74,4 +74,14 @@ public class Player {
     public void setPw(String pw) {
         this.pw = pw;
     }
+
+    @Override
+    public String toString() {
+        return "Player{" +
+                "id=" + id +
+                ", pw='" + pw + '\'' +
+                ", username='" + username + '\'' +
+                ", name=" + name +
+                '}';
+    }
 }
